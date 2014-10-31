@@ -12,7 +12,7 @@ require 'rspec'
 require 'rspec/expectations'
 require 'random-word'
 require 'faker'
-require 'mailosaur'
+# require 'mailosaur'
 require 'awesome_print'
 require 'imgkit'
 require 'socket'
@@ -51,7 +51,7 @@ Capybara.configure do |config|
   config.app_host = $SETUP['url']
 end
 
-Capybara.register_driver :sauce_firefox do 
+Capybara.register_driver :sauce_firefox do
   caps = Selenium::WebDriver::Remote::Capabilities.firefox
   caps.platform = "Windows XP"
   caps.version = "3.6"
@@ -67,4 +67,3 @@ Dir.mkdir('logfiles') unless File.exists?('logfiles')
 Dir.mkdir('logfiles/users') unless File.exists?('logfiles/users')
 
 #World(ShowMeTheCookies)
-
