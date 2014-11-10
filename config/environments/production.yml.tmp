@@ -1,6 +1,0 @@
-url: http://app.onelogin.com
-user:
-  email: <email> 
-  password: <password>
-  first: <first_name>
-  last: <last_name>
